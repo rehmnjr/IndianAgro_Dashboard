@@ -26,11 +26,11 @@ Built as part of a frontend SDE assignment, this dashboard offers insights into 
 
 ### 📋 Table View – Crop Production Extremes
 
-> ![Table Screenshot](./screenshots/table.png)
+> ![Table Screenshot](https://github.com/rehmnjr/IndianAgro_Dashboard/blob/9ce8d360849500083646c8ea88e13dc94a7e24c6/src/screenshots/graph.png)
 
 ### 📊 Bar Chart – Average Crop Production
 
-> ![Chart Screenshot](./screenshots/graph.png)
+> ![Chart Screenshot]([./screenshots/graph.png](https://github.com/rehmnjr/IndianAgro_Dashboard/blob/9ce8d360849500083646c8ea88e13dc94a7e24c6/src/screenshots/table.png))
 
 ---
 
