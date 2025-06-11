@@ -1,55 +1,92 @@
-# React + TypeScript + Vite
+# 🌾 IndianAgro_Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a React + Vite + TypeScript application that visualizes Indian agricultural production data using a dynamic table and an interactive bar chart.
 
-Currently, two official plugins are available:
+Built as part of a frontend SDE assignment, this dashboard offers insights into crop production trends across financial years.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🔍 Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 📋 **Crop Table**: Shows the maximum and minimum production crop per year
+- 📊 **Bar Chart**: Displays the average crop production across all years
+- 🌗 **Dark/Light Theme**: Theme toggle with persistent state using Mantine
+- 🚀 **Fast and responsive** UI with Mantine and Apache ECharts
+- 🧠 **Missing data is treated as 0**, as per assignment requirements
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🔗 Live Demo
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+👉 [**https://indianagro-dashboard.onrender.com/**](https://indianagro-dashboard.onrender.com/)
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
-# IndianAgro_Dashboard
+---
+
+## 🖼️ Screenshots
+
+### 📋 Table View – Crop Production Extremes
+
+> ![Table Screenshot](./screenshots/table.png)
+
+### 📊 Bar Chart – Average Crop Production
+
+> ![Chart Screenshot](./screenshots/graph.png)
+
+---
+
+## 🧩 Tech Stack
+
+- ⚛️ **React** + **Vite** (TypeScript)
+- 🎨 **Mantine UI** (v8) – Layout, theming, components
+- 📊 **Apache ECharts** – Bar chart rendering (no wrapper libs used)
+- 💾 JSON dataset from **Manufac India Agro**
+
+---
+
+## 📁 Folder Structure
+
+```bash
+src/
+├── components/
+│   ├── CropTable.tsx         # Table showing min/max production crops
+│   └── CropBarChart.tsx      # Bar chart showing average production
+├── data/
+│   └── Manufac _ India Agro Dataset.json
+├── App.tsx                   # Main layout
+├── main.tsx                  # Mantine setup + color scheme
+└── index.html
+
+
+
+How to Run Locally
+Follow these steps to set up and run the project on your local machine:
+
+📁 1. Clone the Repository
+git clone https://github.com/your-username/IndianAgro_Dashboard.git
+cd IndianAgro_Dashboard
+
+
+📦 2. Install Dependencies
+Using Yarn:
+yarn install
+
+
+Or using npm:
+npm install
+
+
+🚀 3. Start the Development Server
+Using Yarn:
+yarn dev
+
+
+or using npm:
+npm run dev
+
+
+
+🌐 4. Open in Browser
+http://localhost:5173
+
+
+The app will be live and running on your local environment.
