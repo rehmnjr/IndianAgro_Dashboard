@@ -30,7 +30,7 @@ Built as part of a frontend SDE assignment, this dashboard offers insights into 
 
 ### 📊 Bar Chart – Average Crop Production
 
-> ![Chart Screenshot]([./screenshots/graph.png](https://github.com/rehmnjr/IndianAgro_Dashboard/blob/9ce8d360849500083646c8ea88e13dc94a7e24c6/src/screenshots/table.png))
+> ![Chart Screenshot](https://github.com/rehmnjr/IndianAgro_Dashboard/blob/9ce8d360849500083646c8ea88e13dc94a7e24c6/src/screenshots/table.png)
 
 ---
 
@@ -58,7 +58,7 @@ src/
 
 
 
-How to Run Locally
+## How to Run Locally
 Follow these steps to set up and run the project on your local machine:
 
 📁 1. Clone the Repository
